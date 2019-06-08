@@ -1,5 +1,4 @@
 #!/bin/bash
-pwd
 git add -A
 read Comment
 git commit -m "$Comment"
