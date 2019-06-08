@@ -1,6 +1,5 @@
 #!/bin/bash
 git add -A
-echo "add completed!"
 read Comment
 git commit -m "$Comment"
 git push origin | xargs git branch
