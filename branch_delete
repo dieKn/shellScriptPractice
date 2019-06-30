@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# コメント
+# ブランチ名が部分一致すると削除される
 
 echo 'prefix:'
 read BRANCH_NAME
