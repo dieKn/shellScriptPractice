@@ -5,4 +5,4 @@
 echo 'prefix:'
 read BRANCH_NAME
 
-git branch | grep $BRANCH_NAME | xargs git branch -D
+git branch | grep $BRANCH_NAME | awk '{ if( $1 != "*"){print $1} else {print $2}}' | xargs git branch -D
