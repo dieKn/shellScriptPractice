@@ -1,6 +1,5 @@
 #!/bin/bash
 git add -A
-echo "write comment:"
-read Comment
+echo -n "write comment:";read Comment
 git commit -m "$Comment"
 git rev-parse --abbrev-ref HEAD | xargs git push origin 
